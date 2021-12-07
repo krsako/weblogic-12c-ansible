@@ -1,0 +1,15 @@
+---
+
+weblogic:
+  hosts:
+    wl01:
+      ansible_host: 192.168.99.105
+  vars:
+    domain_name: 'weblogic_domain'
+    domain_admin_server: 'oraclelinux'
+    ansible_ssh_user: root
+    ansible_ssh_pass: 1234
+
+all:
+  children:
+    weblogic:
